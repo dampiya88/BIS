@@ -1,0 +1,5 @@
+#this robots file tells search engines not to index any of the pages
+
+User-agent: *
+Disallow: /
+Noindex: /

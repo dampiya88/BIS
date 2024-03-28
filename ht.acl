@@ -1,0 +1,116 @@
+order allow,deny
+
+# 208.115.111.243 added July 5/2010 - case 18060 and about 400 others, they cached a store.course details wtihout a category and keep hitting it causing errors
+#here we are blocking some search engines that keep causing errors in bistrainer.
+deny from 208.115.111.243
+deny from 208.115.111.250
+deny from 69.84.207.147
+
+allow from all
+
+# Redirects for new BIS domain
+
+RewriteEngine on
+
+#RewriteEngine off
+#
+#RewriteCond %{HTTP_HOST} =www.bistrainer.com [NC,OR]
+#RewriteCond %{HTTP_HOST} =bistrainer.com [NC,OR]
+#RewriteCond %{HTTP_HOST} =www.bistrainer.ca [NC]
+#RewriteCond %{HTTP_HOST} =bistrainer.ca [NC]
+##RewriteRule ^$ http://www.eLearningSystem.ca/? [R=301]
+#
+#RewriteCond %{HTTP_HOST} =www.bistrainer.com [NC,OR]
+#RewriteCond %{HTTP_HOST} =bistrainer.com [NC,OR]
+#RewriteCond %{HTTP_HOST} =www.bistrainer.ca [NC]
+#RewriteCond %{HTTP_HOST} =bistrainer.ca [NC]
+#RewriteCond %{QUERY_STRING} ^.*action=home.IndividualBenefits.*$ [NC,OR]
+#RewriteCond %{QUERY_STRING} ^.*action=home.CompanyBenefits.*$ [NC]
+#RewriteRule . http://www.eLearningSystem.ca/? [R=301]
+#
+#RewriteCond %{HTTP_HOST} =www.bistrainer.com [NC,OR]
+#RewriteCond %{HTTP_HOST} =bistrainer.com [NC,OR]
+#RewriteCond %{HTTP_HOST} =www.bistrainer.ca [NC]
+#RewriteCond %{HTTP_HOST} =bistrainer.ca [NC]
+#RewriteCond %{QUERY_STRING} ^.*action=home.courseListing.*$ [NC,OR]
+#RewriteCond %{QUERY_STRING} ^.*action=store.Home.*$ [NC]
+#RewriteRule . http://www.eLearningSystem.ca/Courses.php? [R=301]
+#
+#RewriteCond %{HTTP_HOST} =www.bistrainer.com [NC,OR]
+#RewriteCond %{HTTP_HOST} =bistrainer.com [NC,OR]
+#RewriteCond %{HTTP_HOST} =www.bistrainer.ca [NC]
+#RewriteCond %{HTTP_HOST} =bistrainer.ca [NC]
+#RewriteCond %{QUERY_STRING} ^.*action=home.DemoTestQuestion.*$ [NC]
+#RewriteRule . http://www.eLearningSystem.ca/CustomCourseDevelopment.php? [R=301]
+#
+#RewriteCond %{HTTP_HOST} =www.bistrainer.com [NC,OR]
+#RewriteCond %{HTTP_HOST} =bistrainer.com [NC,OR]
+#RewriteCond %{HTTP_HOST} =www.bistrainer.ca [NC]
+#RewriteCond %{HTTP_HOST} =bistrainer.ca [NC]
+#RewriteCond %{QUERY_STRING} ^.*action=home.contactUs.*$ [NC]
+#RewriteRule . http://www.eLearningSystem.ca/Contact.php? [R=301]
+#
+#RewriteCond %{HTTP_HOST} =www.bistrainer.com [NC,OR]
+#RewriteCond %{HTTP_HOST} =bistrainer.com [NC,OR]
+#RewriteCond %{HTTP_HOST} =www.bistrainer.ca [NC]
+#RewriteCond %{HTTP_HOST} =bistrainer.ca [NC]
+#RewriteCond %{QUERY_STRING} ^.*action=home.SystemRequirements.*$ [NC]
+#RewriteRule . http://www.eLearningSystem.ca/systemrequirements.php? [R=301]
+
+redirect 301 / http://www.bistrainer.com/index.cfm?action=home.loginFormredirect 301 /books.php http://www.trainanddevelop.ca/business-books.php
+
+redirect 301 /seminars.php http://www.trainanddevelop.ca/leadership-workshops.php
+
+redirect 301 /leadership.php http://www.trainanddevelop.ca/leadership-program.php
+
+redirect 301 /eLearning.php http://www.trainanddevelop.ca/online-training.php
+
+redirect 301 /humanresources/ http://www.trainanddevelop.ca/glossary.php
+
+redirect 301 /contact.php http://www.trainanddevelop.ca/contact.php
+
+redirect 301 /ourstory.php http://www.trainanddevelop.ca/about-us.php
+
+redirect 301 /sitemap.php http://www.trainanddevelop.ca/about-us.php
+
+redirect 301 /privacy.php http://www.trainanddevelop.ca/about-us.php
+
+redirect 301 /seminars/lessons_in_leadership.php http://www.trainanddevelop.ca/leadership-workshop.php?workshop=lessons-in-leadership
+
+redirect 301 /seminars/sales_training.php http://www.trainanddevelop.ca/leadership-workshop.php?workshop=sales-success
+
+redirect 301 /seminars/career_management.php http://www.bisconsulting.ca/seminars/career_management.php
+
+redirect 301 /seminars/motivation.php http://www.trainanddevelop.ca/leadership-workshop.php?workshop=motivating-your-team
+
+redirect 301 /seminars/high_speed_sales_for_women.php http://www.trainanddevelop.ca/leadership-workshop.php?workshop=high-speed-sales-for-women
+
+redirect 301 /seminars/office_ergonomics.php http://www.trainanddevelop.ca/leadership-workshop.php?workshop=customer-service
+
+redirect 301 /seminars/maximum_results.php http://www.trainanddevelop.ca/leadership-workshop.php?workshop=maximum-results
+
+redirect 301 /seminars/leading_millennial.php http://www.trainanddevelop.ca/leadership-workshop.php?workshop=leading-the-millennial
+
+redirect 301 /seminars/fivedysfunctionsofateam.php http://www.trainanddevelop.ca/leadership-workshop.php?workshop=five-dysfunctions-of-a-team
+
+redirect 301 /seminars/effective_communication.php http://www.trainanddevelop.ca/leadership-workshop.php?workshop=effective-communication
+
+redirect 301 /seminars/management_excellence.php http://www.trainanddevelop.ca/leadership-workshop.php?workshop=management-fundamentals
+
+redirect 301 /seminars/goal_setting.php http://www.trainanddevelop.ca/leadership-workshop.php?workshop=goal-setting
+
+redirect 301 /seminars/building_effective_teams.php http://www.trainanddevelop.ca/leadership-workshop.php?workshop=building-effective-teams
+
+redirect 301 /seminars/leadership_fundamentals.php http://www.trainanddevelop.ca/leadership-workshop.php?workshop=leadership-essentials
+
+redirect 301 /seminars/customer_service_excellence.php http://www.trainanddevelop.ca/leadership-workshop.php?workshop=customer-service
+
+redirect 301 /seminars/conflict_management.php http://www.trainanddevelop.ca/leadership-workshop.php?workshop=conflict-management
+
+redirect 301 /seminars/team_building.php http://www.trainanddevelop.ca/leadership-workshop.php?workshop=team-building
+
+redirect 301 /seminars/time_management.php http://www.trainanddevelop.ca/leadership-workshop.php?workshop=time-management
+
+redirect 301 /seminars/success_factors.php http://www.trainanddevelop.ca/leadership-workshop.php?workshop=goal-setting
+
+redirect 301 /seminars/feedback.php http://www.trainanddevelop.ca/leadership-workshop.php?workshop=performance-management

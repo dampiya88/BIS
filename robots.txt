@@ -1,0 +1,48 @@
+#this robots file tells search engines not to index eCommerce pages
+
+User-agent: dotbot 
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: proximic
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: SemrushBot-SA
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-Agent: panscient.com
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: *
+Disallow: /index.cfm?action=store.home&category=8
+Disallow: /index.cfm?action=home.AddLearnerForm*
+Disallow: /index.cfm?action=home.TermsAndConditions
+Disallow: /index.cfm?action=home.SendPasswordMail
+Disallow: /index.cfm?action=home.sendpasswordmail
+Disallow: /index.cfm?action=usr.validate
+Disallow: /index.cfm*?action=usr.validate
+Disallow: /util.cfc
+Disallow: /util.cfc*
+Disallow: /v1/index.cfm?action=home.TermsAndConditions
+Disallow: /assets/
+Disallow: /courseAssets/
+Disallow: /courseAssetsTest/
+Disallow: /components/
+Disallow: /ajax/
+Disallow: /index.cfm?action=ajax.*
+Disallow: /v1/index.cfm?action=ajax.*
+Disallow: /v1/index.cfm?action=ajax*
+Disallow: /v1/index.cfm?action=learner.Invitation*
+Disallow: /v1/index.cfm?action=advancedocumentation.content
+Disallow: /index.cfm?action=store.*
